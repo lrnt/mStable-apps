@@ -170,7 +170,6 @@ export const mixins = {
     font-family: 'DM Mono', monospace !important;
   `,
   mono: css`
-    @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
     font-family: 'VCR OSD Mono', monospace;
     text-transform: uppercase;
     letter-spacing: 0.1ch;
