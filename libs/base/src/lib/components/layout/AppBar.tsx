@@ -7,7 +7,6 @@ import { ReactComponent as LogoSvg } from '@apps/icons/mstable-small.svg'
 import { UnstyledButton, ActivitySpinner } from '@apps/dumb-components'
 import { TransactionStatus } from '@apps/transaction-manifest'
 import { TokenIcon } from '@apps/base/components/core'
-import { ViewportWidth } from '@apps/theme'
 
 import { useTransactionsState } from '../../context/TransactionsProvider'
 import { useNetwork } from '../../context/NetworkProvider'
@@ -15,6 +14,7 @@ import { useNetwork } from '../../context/NetworkProvider'
 import { Navigation } from './Navigation'
 import { SettingsButton } from './SettingsButton'
 import { WalletButton } from './WalletButton'
+import { GraphButton } from './GraphButton'
 
 const Logo = styled(LogoSvg)`
   width: 1.75rem;
@@ -136,6 +136,7 @@ export const AppBar: FC = () => {
           <WalletAndSpinner>
             <TransactionsSpinner />
             <WalletButton />
+            <GraphButton />
             <SettingsButton>
               <TokenIcon symbol={protocolName.toUpperCase()} />
             </SettingsButton>
