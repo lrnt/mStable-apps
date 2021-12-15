@@ -3,7 +3,8 @@ import { useCountUp, CountUpProps } from 'react-countup'
 import styled from 'styled-components'
 import { useFirstMountState } from 'react-use'
 
-import { useToggleDarkTheme, Color } from '@apps/theme'
+import { useIsDarkMode } from '@apps/browser-settings'
+import { Color } from '@apps/theme'
 
 interface Props extends CountUpProps {
   container?: FC
@@ -78,7 +79,7 @@ export const DifferentialCountup: FC<
     prev?: number
   }
 > = ({ prev, end, ...props }) => {
-  const [isDarkTheme] = useToggleDarkTheme()
+  const isDarkTheme = useIsDarkMode()
   const blue = isDarkTheme ? Color.coolBlue : Color.blue
   return (
     <CountUp

@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, useEffect, useLayoutEffect } from 'react'
+import React, { FC, useEffect, useLayoutEffect } from 'react'
 import { Route, Switch, Redirect, useHistory } from 'react-router-dom'
 import { useEffectOnce } from 'react-use'
 
