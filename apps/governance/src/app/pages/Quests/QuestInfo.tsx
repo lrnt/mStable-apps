@@ -9,7 +9,7 @@ import { ViewportWidth } from '@apps/theme'
 import { ThemedSkeleton } from '@apps/dumb-components'
 import { truncateAddress } from '@apps/formatters'
 
-import { useStakedTokenQuery } from '../../context/StakedTokenProvider'
+import { useStakedTokenQuery } from '../../context/StakedToken'
 
 import { ClaimButtons } from './ClaimButtons'
 import { QuestCard } from './QuestCard'
